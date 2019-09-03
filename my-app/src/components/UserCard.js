@@ -1,13 +1,13 @@
 import React from 'react';
 import FollowersCard from './FollowersCard';
 
- const UserCard = props => {
+const UserCard = props => {
     return(
         <div>
-            This is from the UserCard
-            <FollowersCard/>
+            
+            {/* <FollowersCard/> */}
         </div>
     )
 };
 
- export default UserCard; 
+export default UserCard;
