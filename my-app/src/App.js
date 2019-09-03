@@ -20,6 +20,7 @@ class App extends React.Component {
 
 //https://api.github.com/users/adriangarcia5
 
+//Can't fetch data for some reason
   // fetchUsers = () => {
   //   fetch(`https://api.github.com/users/adriangarcia5`)
   //   // first promise resolution is used to format the data.
@@ -27,7 +28,7 @@ class App extends React.Component {
   //     return res.json();
   //   })
   //   //what gets returned from the previous promise moves into the next promise
-  //   .then(user => this.setState({users: user.data}))
+  //   .then(user => this.setState({users: user.res.data}))
   //   .catch(err => {
   //     console.log('Sorry, the API is currently down', err);
   //   })
@@ -35,9 +36,10 @@ class App extends React.Component {
 
   //axios call:
 
+  //https://api.github.com/users/adriangarcia5
   fetchUsers = () => {
     axios
-    .get(``)
+    .get(`https://api.github.com/users/adriangarcia5`)
     .then(res => {
       this.setState({users: res.data})
     })
@@ -55,4 +57,3 @@ class App extends React.Component {
 }
 
 export default App;
-
